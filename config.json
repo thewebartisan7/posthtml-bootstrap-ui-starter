@@ -19,6 +19,13 @@
           "custom": "./src/custom/"
         }
       ]
+    },
+    "posthtml-beautify": {
+      "rules": {
+        "indent": 2,
+        "blankLines": false,
+        "sortAttr": false
+      }
     }
   }
 }
