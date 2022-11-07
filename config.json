@@ -1,0 +1,24 @@
+{
+  "root": "./src/",
+  "input": "pages/*.html",
+  "output": "dist",
+  "skip": [],
+  "options": {
+    "sync": false,
+    "directives": []
+  },
+  "plugins": {
+    "posthtml-component": {
+      "root": "./src",
+      "folders": ["components", "layouts"],
+      "namespaces": [
+        {
+          "name": "ui",
+          "root": "./node_modules/posthtml-bootstrap-ui/src",
+          "fallback": "./src/",
+          "custom": "./src/custom/"
+        }
+      ]
+    }
+  }
+}

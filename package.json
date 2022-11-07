@@ -1,0 +1,34 @@
+{
+  "name": "posthtml-bootstrap-ui-starter",
+  "version": "1.0.0-beta.1",
+  "description": "PostHTML Bootstrap UI Starter Template",
+  "license": "MIT",
+  "repository": "thewebartisan7/posthtml-bootstrap-ui-starter",
+  "author": "Damir Grgic <damir@tuta.io> (https://github.com/thewebartisan7)",
+  "main": "src",
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "build": "posthtml -c config.json",
+    "ui:publish": "npm explore posthtml-bootstrap-ui -- npm run publish"
+  },
+  "keywords": [
+    "posthtml",
+    "posthtml-components",
+    "posthtml-ui",
+    "ui",
+    "bootstrap",
+    "components",
+    "html"
+  ],
+  "dependencies": {
+    "bootstrap-icons": "^1.9.1",
+    "posthtml-bootstrap-ui": "github:thewebartisan7/posthtml-bootstrap-ui#main"
+  },
+  "devDependencies": {
+    "posthtml": "^0.16.6",
+    "posthtml-beautify": "^0.7.0",
+    "posthtml-cli": "^0.10.0"
+  }
+}

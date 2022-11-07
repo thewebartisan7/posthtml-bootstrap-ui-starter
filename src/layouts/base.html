@@ -1,0 +1,39 @@
+<x-ui::html class="h-100" title="My App">
+    <x-ui::body class="d-flex flex-column h-100 bg-light">
+        <x-ui::header size="lg" class="py-3 mb-4">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between">
+                <a href="index.html" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none h5 font-monospace">
+                    My App
+                </a>
+
+                <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                    <li><a class="nav-link px-2 link-dark" href="index.html">Home</a></li>
+                </ul>
+
+                <div class="col-md-3 text-end d-none d-md-block">
+                    <x-ui::button.link href="https://github.com/thewebartisan7/posthtml-bootstrap-ui" target="_blank">GitHub</x-ui::button.link>
+                </div>
+            </div>
+        </x-ui::header>
+
+        <main id="page" class="flex-shrink-0">
+            <div class="container-lg mb-5">
+                <yield></yield>
+            </div>
+        </main>
+
+        <x-ui::footer size="lg" class="footer mt-auto py-3">
+            <div class="text-muted text-center">
+                &copy;2022 My App
+            </div>
+        </x-ui::footer>
+    </x-ui::body>
+</x-ui::html>
+
+<push name="head">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</push>
+
+<push name="foot">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+</push>
