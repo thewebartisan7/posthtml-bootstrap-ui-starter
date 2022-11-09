@@ -24,7 +24,7 @@
   ],
   "dependencies": {
     "bootstrap-icons": "^1.9.1",
-    "posthtml-bootstrap-ui": "github:thewebartisan7/posthtml-bootstrap-ui#main"
+    "posthtml-bootstrap-ui": "^1.0.0-beta.1"
   },
   "devDependencies": {
     "posthtml": "^0.16.6",
