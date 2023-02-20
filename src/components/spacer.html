@@ -1,0 +1,13 @@
+<!-- spacer.html -->
+<script props>
+  module.exports = {
+    height: props.height || ''
+  }
+</script>
+
+<if condition="height || height !== ''">
+    <div style="line-height: {{ height }};" role="separator">&zwnj;</div>
+</if>
+<else>
+    <div role="separator">&zwnj;</div>
+</else>

@@ -1,6 +1,16 @@
 <!-- Just a dummy component -->
-<div class="row justify-content-center align-items-center">
-    <div class="col-lg-8 text-center">
-        <h1 class="display-1 fw-bold mb-4"><yield></yield></h1>
+<div>
+    <div class="row justify-content-center align-items-center">
+        <div class="col-lg-8 text-center">
+            <h1 class="display-1 fw-bold mb-4"><yield></yield></h1>
+        </div>
     </div>
+
+    <fetch url="https://jsonplaceholder.typicode.com/users/1">
+        @{{ response?.name }}'s username is @{{ response?.username }}
+    </fetch>
+
+    <fetch url="https://jsonplaceholder.typicode.com/users/2">
+        <x-res name="@{{ response.name }}" username="@{{ response.username }}"></x-res>
+    </fetch>
 </div>

@@ -1,0 +1,12 @@
+<script props>
+  module.exports = {
+    realtype: props.type,
+    type: ({type} = props) => {
+      return type || 'blabla';
+    }
+  }
+</script>
+
+<div class="{{ type }}">
+    {{ type }}
+</div>
